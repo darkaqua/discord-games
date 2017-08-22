@@ -1,0 +1,26 @@
+{
+  "name": "discord-games",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkaqua/discord-games.git"
+  },
+  "author": "darkaqua",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darkaqua/discord-games/issues"
+  },
+  "homepage": "https://github.com/darkaqua/discord-games#readme",
+  "dependencies": {
+    "discord.js": "^11.1.0",
+    "express": "^4.15.4",
+    "less-middleware": "^2.2.1",
+    "pmx": "^1.2.0",
+    "pug": "^2.0.0-rc.3"
+  }
+}

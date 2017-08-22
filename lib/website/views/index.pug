@@ -1,0 +1,37 @@
+html
+    head
+        title=name
+        link(rel="shortcut icon" href=favicon type="image/x-icon")
+        link(rel="icon" href=favicon type="image/x-icon")
+
+        link(rel='stylesheet' href='/css/style.css')
+        meta(name="viewport" content="width=device-width, initial-scale=0.7")
+    body
+        div.container
+            div.bot
+                div.avatar
+                    img(src=avatar)
+                div.name
+                    h2=name
+                    a='Currently playing '
+                    a#games=current_games
+                    a=' games in '
+                    a#guilds=current_guilds
+                    a=' discord servers'
+                div.example
+                    img(src=gif)
+                div.button-container
+                    a.button(href="https://discordapp.com/oauth2/authorize?client_id=" + bot_id + "&scope=bot&permissions=8192" target='_blank')
+                        label='add to your discord server'
+                div.join-us
+                    a='Or join our discord server '
+                    a(href='https://darkaqua.net' target='_blank')='darkaqua'
+                    a=' (spanish only).'
+                div.bugs
+                    a='More games in '
+                    a(href='https://github.com/darkaqua/discord-games#readme' target='_blank')='github'
+                    a='.'
+        footer
+            script(src='/js/jquery-3.2.1.min.js')
+            script(src='/js/jquery-ui.min.js')
+            script(src='/js/scripts.js')

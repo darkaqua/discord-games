@@ -1,0 +1,126 @@
+@blurple: #7289DA;
+@white: #FFFFFF;
+@greyple: #99AAB5;
+@dark: #2C2F33;
+@not_dark: #23272A;
+
+body {
+  font-family: Whitney,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+
+  background-color: @not_dark;
+  color: white;
+  margin: 0;
+}
+
+a {
+  &:link, &:hover, &:visited{
+    text-decoration: none;
+  }
+  color: @greyple;
+  &:link, &:visited{
+    font-weight: 700;
+    color: @greyple;
+  }
+}
+
+.container{
+
+  position: relative;
+  width: 100%;
+
+  margin: 100px 0;
+
+  .bot{
+
+    .avatar{
+
+      margin: auto;
+      display: table;
+
+      img{
+        border-radius: 50%;
+        height: 100px;
+      }
+
+    }
+
+    .name{
+      margin-left: auto;
+      margin-right: auto;
+
+      text-align: center;
+
+      h2{
+        margin-bottom: 0;
+      }
+      a{
+        text-align: center;
+        color: #99AAB5;
+      }
+    }
+
+    .example{
+      margin: 50px auto;
+      display: table;
+    }
+
+    .button-container{
+
+      position: relative;
+      height: 73px;
+
+      display: table;
+
+      margin-left: auto;
+      margin-right: auto;
+
+      .button{
+
+        position: absolute;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        transform: translate(-50%, 0%);
+        min-width: 280px;
+
+        display: table;
+        background-color: @dark;
+
+        padding: 20px;
+        border: 3px solid @white;
+
+        padding-bottom: 30px;
+        box-shadow: inset 0px -15px 0px 0px @not_dark;
+
+        font-size: 14px;
+        font-weight: 800;
+
+        text-align: center;
+
+        &:active{
+          margin-top: 5px;
+          padding-bottom: 25px;
+          box-shadow: inset 0px -10px 0px 0px @not_dark;
+        }
+
+        &:link, &:hover, &:visited{
+          color: @white;
+        }
+
+        label{
+          cursor: pointer;
+          text-transform: uppercase;
+        }
+      }
+
+    }
+
+    .join-us, .bugs{
+      text-align: center;
+      margin: 10px 0;
+    }
+
+  }
+
+}
